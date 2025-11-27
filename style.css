@@ -1,0 +1,315 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    border-spacing: border-box;
+}
+
+:root {
+    --douradoClaro: #F4D59A;
+    --douradoForte: #D9A64A;
+    --laranjaQueimado: #C8702C;
+    --vermelhoSangue: #8C1F17;
+    --vermelhoBrilhante: #B43729;
+    --bronzeEscuro: #5A3A20;
+    --cinzaMetalico: #A5A6AB;
+    --pretoProfundo: #1A1A1A;
+}
+
+body {
+    background: var(--pretoProfundo);
+    color: var(--douradoClaro);
+}
+
+.interface {
+    background: var(--pretoProfundo);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.topo {
+    height: 70px;
+}
+
+.topo img {
+    margin: 10px 20px;
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    width: 800px;
+    top: 20px;
+    left: 1200px;
+}
+
+.menu ul {
+    list-style: none;
+    font: 1.2em verdana;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    color: var(--cinzaMetalico);
+    text-decoration: none;
+    display: block;
+    padding: 5px 25px;
+}
+
+.menu li a:hover {
+    color: var(--vermelhoBrilhante);
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner_anime {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 350px;
+    margin: 0;
+}
+
+.banner_anime img {
+    position: absolute;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+
+#anime1,
+#anime2:hover {
+    opacity: 1;
+}
+
+#anime1:hover,
+#anime2 {
+    opacity: 0;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 30px 0px;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cinzaMetalico);
+}
+
+/* Formulário */
+form {
+    width: 1000px;
+    margin: auto;
+    font-family: sans-serif;
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+legend {
+    font-size: 1.5rem;
+    color: var(--laranjaQueimado);
+}
+
+fieldset {
+    border: 1px solid var(--vermelhoSangue);
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+input,
+textarea,
+select {
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.sexo {
+    width: 250px;
+}
+
+.usuario {
+    background: url(./img/icontato.png) no-repeat 95% 95%;
+}
+
+.endereco {
+    background: url(./img/iendereco.png) no-repeat 95% 95%;
+}
+
+.mensagem {
+    background: url(./img/imensagem.png) no-repeat 95% 95%;
+}
+
+.console {
+    background: url(./img/ipgto.png) no-repeat 95% 95%;
+}
+
+.btn {
+    background: var(--vermelhoSangue);
+    color: var(--cinzaMetalico);
+    font-size: 1.1rem;
+    padding: 7px;
+    border-radius: 10px;
+    margin: 0px 5px 15px 5px;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid var(--vermelhoSangue);
+    padding: 5px;
+}
+
+footer p {
+    text-align: center;
+    margin: 10px 5px;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+
+}
+
+footer a {
+    text-decoration: none;
+}
+
+/*Página de fotos*/
+.galeria1 p {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 5px 15px;
+    text-align: center;
+}
+
+.album {
+    width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    list-style: none;
+}
+
+.album li {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border: 3px solid var(--vermelhoBrilhante);
+    background-color: var(--pretoProfundo);
+    -webkit-transition: all .6s ease-in-out;
+}
+
+.galeria {
+    opacity: 0;
+    color: var(--vermelhoBrilhante);
+    background: rgba(0, 0, 0, .5);
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    padding: 5px;
+    line-height: 375px;
+}
+
+.galeria:hover {
+    opacity: 1;
+}
+
+.album li:hover {
+    -webkit-transform: scale(1.5);
+}
+
+.foto01 {
+    background: url(./img/galeria1.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto01:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.foto02 {
+    background: url(./img/galeria2.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto02:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.foto03 {
+    background: url(./img/galeria3.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto03:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.foto04 {
+    background: url(./img/galeria4.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto04:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.foto05 {
+    background: url(./img/galeria5.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto05:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.foto06 {
+    background: url(./img/galeria6.jpg) no-repeat;
+    background-position: 50% 50%;
+    background-size: 700px 500px;
+}
+
+.foto06:hover {
+    background-position: 0% 0%;
+    background-size: 200px 200px;
+}
+
+.radio_tv {
+    width: 75%;
+    height: 600px;
+    background: url(./img/radio-tv.png) no-repeat;
+    margin: 5px auto;
+}
+
+.musica {
+    display: block;
+    position: relative;
+    width: 32%;
+    top: 490px;
+    left: 580px;
+}
+
+.filme {
+    display: block;
+    position: relative;
+    width: 50%;
+    height: 300px;
+    top: 50px;
+    left: 100px;
+}
+
+
+
+
+
+
